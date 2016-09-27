@@ -12,12 +12,20 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
-  gem 'byebug'
+  gem 'pry-byebug'
   gem 'rspec-rails', '~>3.5'
+  gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'simple_form'
+end
+
+group :test do
+  gem 'simplecov', require: false
 end
 
 group :development do
   gem 'web-console', '~> 2.0'
+  gem 'rubocop', require: false
 
   gem 'spring'
 end
